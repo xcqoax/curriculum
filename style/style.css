@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+
+h2, h3, h4{
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    border-bottom:1px solid #C7838E;
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 5px 0;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;  
+}
+header{
+    z-index: 9999;
+    width: 100%;
+    background: rgba(29, 29, 33,0.7) !important;
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-around; 
+    align-items: center;
+    position: fixed;
+}
+.logo p{
+    padding: 5px 0;
+    color:#fff;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    font-family: 'Archivo', sans-serif;
+}
+
+.logo span{
+    color: white;
+    display: none;
+}
+ul li {
+    display: inline-block;
+    
+}
+/* font-family: 'Roboto', sans-serif;*/
+
+
+.menu li a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 12px;
+    display: block;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li a:hover, .redes-sociales li a:hover{
+    color:#6FADC7
+}
+
+.redes-sociales li a{
+    color:white;
+    padding: 5px;
+}
+
+.ocultar{
+    display: none;
+}
+
+@media (max-width:768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .redes-sociales{
+        display: none;
+    }
+
+ .menu{
+    transition: all 0.5s ease-in-out;
+ }
+    .nav{
+        width: 100%;
+        margin-top: 10px;
+        
+    }
+   header .nav  li {
+        display: inline-block;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        width: 100%;
+    }
+    .logo{
+        
+        width: 100%;
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo span{
+        display: block;
+        font-size: 25px;
+        border:1px solid white;
+        padding: 5px 10px;
+    }
+}
+
+/*****************************************************/
+#home{
+    width: 100%;
+    height: 100vh;
+    background: url('../recursos/wireframe.jpg') ;
+    background-size: cover;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-home{
+    font-size: 50px;
+     font-family: 'Archivo', sans-serif;
+}
+.subtitulo-home, #elemento{
+    font-size: 30px;
+     font-family: 'Roboto', sans-serif;
+}
+
+
+p{
+    margin: 0;
+    padding: 0;
+    
+}
+#elemento{
+    color:white;
+   
+    width: 100%;
+    text-align: center;
+}
+#home p{
+    margin-top: 20px;
+}
+
+h2{
+    color:white;
+    padding: 5px 10px;
+    border:1px solid white;
+    margin:0px 10px;
+}
+
+@media(max-width:600px){
+    h2{
+        font-size: 30px !important;
+    }
+}
+
+/*************************************** sobre mi *******************************************************/
+#sobreMi{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+
+}
+.miFoto, .miInfo{
+    flex-basis: 50%;
+}
+
+.miFoto{
+    background: url('../recursos/foto.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    
+}
+
+.miInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   padding: 20px;
+}
+.miInfo h3{
+    margin-bottom: 20px;
+    border-bottom:1px solid #C7838E
+}
+.miInfo p{
+    margin: 5px 0;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.miInfo h4{
+    margin: 20px 0;
+    
+}                   
+
+.miInfo ul li i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.html{
+    color:#E44D26
+}
+.css{
+    color: #3399FF
+}
+.js{
+    color: #F7DF1E
+}
+.boots{
+    color: #563D7C
+}
+.react{
+    color: #00D8FF
+}
+
+@media(max-width:768px){
+    #sobreMi{
+        flex-direction: column;
+        
+    }
+    .miInfo h3{
+        margin-bottom: 20px !important;
+    }
+}
+
+/**********************************************mis proyectos****************************************************/
+#miPortafolio{
+    background: #f2f5f7;
+    padding-top: 80px;
+}
+.contenedor{
+    width:90%;
+    margin:0 auto;
+}
+#tituloProyectos{
+    color: black;
+    border-bottom: 1px solid #C7838E;
+    margin-bottom: 20px;
+}
+
+.miGaleria{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta{
+   
+    margin-bottom: 15px;
+   
+    flex: 0 0 calc(33% - 1rem);
+}
+
+
+.textoTarjeta{
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    
+    
+}
+
+.textoTarjeta h4 {
+    min-height: 100%;
+    margin-bottom: 5px;
+    color:#C46080;
+}
+
+.textoTarjeta p{
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+.textoTarjeta a{
+    border:1px solid #65ADC7;
+    margin-top: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:#65ADC7;
+    transition: all .5s ease-in-out;
+}
+
+.textoTarjeta a:hover{
+    background: #65ADC7;
+    color: white;
+}
+
+@media(max-width: 768px){
+    .tarjeta{
+        flex: 0 0 calc(50% - 1rem)
+    }
+}
+
+@media(max-width: 480px){
+    .tarjeta{
+        flex: 0 0 100%
+    }
+    
+}
+
+/*********************************************************************************************/
+#contacto{
+    height: 250px;
+    background: #38677A
+}
+#contacto h3{
+    margin-top: 20px;
+    padding: 10px ;
+    color: white
+}
+
+#contacto .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.info-contacto{
+    text-align: center;
+    color: white;
+}
+
+.redes-sociales-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.redes-sociales-contacto li  {
+    font-size: 40px;
+    margin: 35px 10px;
+    
+}
+
+.redes-sociales-contacto li a{
+    color: rgb(0,0,0,.3)
+}
+
+#contraste-amarillo{
+    color: #C7C25B
+}
+
+.mail:hover{
+    color:white !important;
+}
+
+.linked:hover{
+    color: #0077B5 ;
+}
+.github:hover{
+    color: black
+}
+
+.fcc:hover{
+    color:#006400
+}
+
+.instagram:hover{
+    color: #A331BD
+}
+
+.imgGraphQL{
+    width: 20px;
+}
+
+.formacion{
+    margin-bottom: 25px;
+}
+
+.infoCurso{
+    border:1px solid #C7838E;
+    padding: 5px 10px;
+    margin: 15px 0px;
+
+    width: 45%;
+    
+}
+
+@media(max-width:768px){
+    .infoCurso{
+        width: 100%;
+    }
+}
+
+.cursos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.infoCurso li{
+    background: #C7838E;
+    padding: 5px;
+    color:white;
+    margin: 1px;
+
+}

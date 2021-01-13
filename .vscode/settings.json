@@ -1,0 +1,11 @@
+{
+    "[json]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "liveServer.settings.port": 5501,
+
+}
